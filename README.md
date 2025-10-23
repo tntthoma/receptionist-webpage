@@ -1,9 +1,10 @@
 # AI Receptionist Website
 
-Eine moderne, responsive Landing Page für dein AI Receptionist Business mit Retell AI.
+Eine moderne, responsive Landing Page mit vollständigem Customer Dashboard für dein AI Receptionist Business mit Retell AI.
 
 ## Features
 
+### Landing Page
 - Modern und professionell gestaltete Single-Page-Application
 - Fully responsive (Mobile, Tablet, Desktop)
 - Next.js 15 mit TypeScript
@@ -12,14 +13,30 @@ Eine moderne, responsive Landing Page für dein AI Receptionist Business mit Ret
 - Kontaktformular für Demo-Anfragen
 - Optimiert für Performance
 
+### Customer Dashboard
+- **User Authentication**: Registrierung und Login mit Supabase
+- **Dashboard Übersicht**: Echtzeit-Statistiken (Anrufe, Termine, Durchschnittsdauer)
+- **Anrufliste**: Vollständige Übersicht aller Anrufe mit Filterung
+- **Anruf-Details**: Transkripte, Zusammenfassungen, Zeitstempel
+- **Retell AI Integration**: Automatischer Abruf von Anrufdaten
+- **Responsive Design**: Funktioniert auf allen Geräten
+- **Sichere Routes**: Geschützte Dashboard-Seiten
+
 ## Sektionen
 
+### Landing Page
 1. **Hero Section** - Aufmerksamkeitsstarker Einstieg mit Call-to-Action
 2. **Features** - 6 wichtige Features der AI-Rezeption
 3. **Use Cases** - Branchen-spezifische Anwendungsfälle
 4. **Pricing** - 3 Preispakete (Starter, Professional, Enterprise)
 5. **Contact** - Kontaktformular für Demo-Anfragen
 6. **Footer** - Navigation und rechtliche Links
+
+### Dashboard
+1. **Übersicht** - Statistiken und Quick Actions
+2. **Anrufe** - Liste aller Anrufe mit Details
+3. **Analytics** - [Geplant für zukünftige Version]
+4. **Einstellungen** - [Geplant für zukünftige Version]
 
 ## Installation
 
@@ -40,12 +57,30 @@ cd C:\Users\tntth\Projects\receptionist-website
 npm install
 ```
 
-3. Starte den Development Server:
+3. **Dashboard Setup (erforderlich für Login/Dashboard):**
+
+Siehe die ausführliche Anleitung in [DASHBOARD_SETUP.md](./DASHBOARD_SETUP.md) für:
+- Supabase Account erstellen und konfigurieren
+- Retell AI API Key einrichten
+- `.env.local` Datei konfigurieren
+
+**Quick Setup:**
+```bash
+# Kopiere .env.local.example zu .env.local
+cp .env.local.example .env.local
+
+# Bearbeite .env.local und füge deine Keys ein:
+# - NEXT_PUBLIC_SUPABASE_URL
+# - NEXT_PUBLIC_SUPABASE_ANON_KEY
+# - RETELL_API_KEY
+```
+
+4. Starte den Development Server:
 ```bash
 npm run dev
 ```
 
-4. Öffne deinen Browser und gehe zu:
+5. Öffne deinen Browser und gehe zu:
 ```
 http://localhost:3000
 ```

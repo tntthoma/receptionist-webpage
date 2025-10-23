@@ -42,12 +42,18 @@ export default function Home() {
               <a href="#pricing" className="text-gray-700 hover:text-primary-600 transition">Preise</a>
               <a href="#contact" className="text-gray-700 hover:text-primary-600 transition">Kontakt</a>
             </div>
-            <div>
+            <div className="flex items-center space-x-4">
               <a
-                href="#contact"
+                href="/login"
+                className="text-gray-700 hover:text-primary-600 transition font-medium"
+              >
+                Anmelden
+              </a>
+              <a
+                href="/register"
                 className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition"
               >
-                Demo anfordern
+                Kostenlos starten
               </a>
             </div>
           </div>
